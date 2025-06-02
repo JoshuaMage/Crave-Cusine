@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+body {
+    @apply bg-black text-white;
+  }
+
+  @theme {
+    --color-primary: #DF3F01;
+    --color-secondary: #D9D9D9;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+@layer components {
+  .section-wrapper {
+    @apply w-full flex justify-center;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(2);
+}
