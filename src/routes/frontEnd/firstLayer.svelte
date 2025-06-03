@@ -20,9 +20,9 @@
 			<h1 class="font-cormorant py-6 text-[90px] leading-none font-bold">
 				RESERVE YOUR <br /> TABLE TODAY
 			</h1>
-			<img src={logo} alt="logo" class="absolute top-1/2 right-1/4 z-10 size-[150px]" />
+			<img src={logo} alt="logo" class="absolute top-1/2 left-60 z-10 size-[150px]" />
 			<img src={Vector} alt="vector" class="absolute top-[58%] right-1/6 z-0" />
-			<img src={Coffee} alt="coffee" class="absolute right-1 bottom-1 h-[363px] w-[482px]" />
+			<img src={Coffee} alt="coffee" class="absolute left-70 bottom-1 h-[363px] w-[550px]" />
 		</div>
 	</div>
 </div>
