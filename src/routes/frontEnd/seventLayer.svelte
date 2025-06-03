@@ -12,15 +12,15 @@
 </script>
 
 <div class="section-wrapper">
-	<div class="bg-primary flex h-[1017px] w-[1600px] items-center justify-center">
-		<div class="grid size-[80%] grid-cols-2">
+	<div class="bg-primary flex md:h-[1017px] md:w-[1600px] w-full  items-center justify-center max-md:p-4">
+		<div class="grid md:size-[80%] md:grid-cols-2">
 			<section class="relative z-1">
-				<div class="">
+				<div class="max-md:text-center">
 					<p class="mb-4 text-lg text-gray-400">TESTIMONIALS</p>
 					<p class="mb-10 text-5xl font-bold">Our Guest Share This <br /> About Our Foods.</p>
 				</div>
-				<div class=" h-[521px] bg-black p-15">
-					<div class="mb-8 flex">
+				<div class=" md:h-[521px] md:bg-black md:p-15 p-10">
+					<div class="md:mb-8 mb-4 flex">
 						{#each star as { image, alt }}
 							<img src={image} {alt} />
 						{/each}
@@ -34,10 +34,10 @@
 				</div>
 			</section>
 
-			<section class="relative">
-				<img src={Plate3} alt="Plate3" class="absolute right-[10%] z-0 h-[657px]" />
+			<section class="md:relative">
+				<img src={Plate3} alt="Plate3" class="md:absolute md:right-[10%] z-0 md:h-[657px]" />
 			</section>
-			<div class="relative bottom-8 left-full m-10 flex">
+			<div class="md:relative md:bottom-8 md:left-full md:m-10 m-4 flex max-md:justify-center">
 				<button class="h-12 w-20 bg-white text-3xl font-bold text-black">←</button>
 				<button class="h-12 w-20 bg-black text-3xl font-bold">→</button>
 			</div>

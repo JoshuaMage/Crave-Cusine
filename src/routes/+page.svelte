@@ -14,7 +14,7 @@
 	import Group1 from '$lib/image/Group-1.png';
 </script>
 
-<div class="flex min-h-screen flex-col gap-32 py-4">
+<div class="flex min-h-screen flex-col gap-32 p-4 overflow-hidden">
 	<FirstLayer />
 
 	<About />

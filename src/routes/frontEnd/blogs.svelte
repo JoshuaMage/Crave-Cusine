@@ -32,20 +32,20 @@
 			<h6 class="text-primary mb-4 font-bold">LATEST BLOG</h6>
 			<p class="text-bold text-4xl font-bold">Read Our Latest & Trending <br /> News Blogs</p>
 		</div>
-		<div class="grid h-96 w-[1296px] grid-cols-2">
+		<div class="grid md:h-96 w-full md:w-[1296px] md:grid-cols-2 ">
 			{#each blogPosts as { image, category, title, description, author, date, categoryTag }}
-				<div class="flex gap-2">
-					<img src={image} alt={category} class="h-[347px] w-[306px] object-cover" />
+				<div class="flex max-md:flex-col gap-2">
+					<img src={image} alt={category} class="h-[347px] md:w-[306px] object-cover max-md:rounded-2xl" />
 					<div class="mx-6 my-3 flex flex-col gap-4">
 						<p class="bg-primary w-[40%] p-1 text-center text-white">{category}</p>
 						<p class="text-lg tracking-wide">{title}</p>
 						<p class="text-gray-400">{description}</p>
-						<div class="flex items-center gap-2">
+						<div class="flex items-center max-md:justify-center gap-2">
 							<img src={author === "Joshua Del Rosario" ? Customer2 : Customer1} alt={author} />
 							<p class="text-xs">{author}</p>
 						</div>
 						<hr class="text-gray-500" />
-						<p class="text-gray-400">{date} / {categoryTag}</p>
+						<p class="text-gray-400 max-md:text-center">{date} / {categoryTag}</p>
 					</div>
 				</div>
 			{/each}

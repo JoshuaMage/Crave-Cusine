@@ -9,7 +9,7 @@
 </script>
 
 <div class="section-wrapper">
-	<div class="flex h-[920px] w-[1296px] flex-col justify-center">
+	<div class="flex md:h-[920px] md:w-[1296px] w-full flex-col justify-center">
 		<div class="flex flex-col items-center py-4 text-center">
 			<h4 class="text-primary text-lg font-bold">OUR BEST CHEF'S</h4>
 			<p class="text-5xl font-bold tracking-wider">
@@ -19,10 +19,10 @@
 			<hr class="mt-10 w-96" />
 		</div>
 
-		<div class="flex gap-4">
+		<div class="flex max-md:flex-col gap-4">
 			{#each chefs as { image, alt, name, position }}
 				<div class="flex flex-col">
-					<div class="relative h-[547px] w-[636px] overflow-hidden rounded-md">
+					<div class="relative h-[547px] md:w-[636px] overflow-hidden rounded-md max-md:rounded-2xl">
 						<img src={image} {alt} class="h-full w-full object-cover" />
 						<div class="absolute inset-0 bg-black/40"></div>
 

@@ -38,11 +38,11 @@
 
 <div class="section-wrapper">
 	<div
-		class="flex h-[703px] w-[1600px] flex-col items-center justify-center gap-10 bg-neutral-900 p-20"
+		class="flex  md:h-[703px] md:w-[1600px] w-full flex-col items-center justify-center gap-10 bg-neutral-900 p-20"
 	>
-		<section class="grid grid-cols-2 items-center px-16">
+		<section class="grid md:grid-cols-2 items-center md:px-16 max-md:text-center max-md:gap-6">
 			<div>
-				<h6 class="text-primary mb-2 text-sm font-black">OUR POPULAR SERVICES</h6>
+				<h6 class="text-primary mb-2 text-sm font-black ">OUR POPULAR SERVICES</h6>
 				<h5 class="text-5xl font-bold">Best Category Foods Menu</h5>
 			</div>
 			<div>
@@ -52,11 +52,11 @@
 				</p>
 			</div>
 		</section>
-		<section class="flex gap-10">
+		<section class="flex max-md:flex-col gap-10">
 			{#each category as { image, alt, title, detail, goto }}
 				<div
 					class={`h-[321px] w-[306px]  border-2 p-5 ${
-						title === 'Popular Food' ? 'border-red-700 bg-red-700' : 'border-red-700 bg-black'
+						title === 'Popular Food' ? 'border-red-700 bg-red-700 max-md:rounded-2xl' : 'border-red-700 bg-black max-md:rounded-2xl'
 					}`}
 				>
 					<img src={image} {alt} class="size-14" />

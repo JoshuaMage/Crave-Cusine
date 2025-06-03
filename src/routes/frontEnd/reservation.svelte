@@ -30,14 +30,14 @@
 							<img
 								src={User }
 								alt="User "
-								class="pointer-events-none absolute top-1/2 right-10 h-6 w-6 -translate-y-1/2"
+								class="pointer-events-none absolute top-1/2 right-12 h-6 w-6 -translate-y-1/2"
 							/>
 						{/if}
 					</div>
 				{/each}
 			</div>
 
-			<button class="bg-primary mt-4 px-6 py-3">
+			<button class="bg-primary mt-4 px-6 py-3 max-md:rounded-2xl">
 				ABOUT MORE <span class="font-bold">&#8594;</span>
 			</button>
 		</div>
