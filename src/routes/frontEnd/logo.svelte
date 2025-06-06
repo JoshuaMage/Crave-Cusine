@@ -15,9 +15,9 @@
 </script>
 
 <div class="section-wrapper">
-	<div class="flex h-[237px] md:w-[1600px] items-center justify-around gap-10 bg-white p-6">
+	<div class="flex max-md:rounded-2xl h-30 md:h-[237px] w-full md:w-[1600px] items-center justify-around md:gap-10 bg-white  md:p-6">
 		{#each imagelogo as { image, alt }}
-			<img src={image} {alt} class="md:h-[120px] md:w-[140px]" />
+			<img src={image} {alt} class="lg:h-[120px] md:w-[140px] w-15" />
 		{/each}
 	</div>
 </div>

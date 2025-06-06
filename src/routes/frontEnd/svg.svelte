@@ -1,5 +1,5 @@
 <div class="flex gap-3">
-	<svg class='size-8' viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+	<svg class='size-8 max-md:size-6' viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
 		><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
 			id="SVGRepo_tracerCarrier"
 			stroke-linecap="round"
@@ -25,7 +25,7 @@
 		</g></svg
 	>
 	<svg
-		class='size-8'
+		class='size-8 max-md:size-6'
 		viewBox="0 0 20 20"
 		version="1.1"
 		xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 		viewBox="0 0 32 32"
 		xml:space="preserve"
-		class='size-8'
+		class='size-8 max-md:size-6'
 		fill="#000000"
 		><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
 			id="SVGRepo_tracerCarrier"
@@ -213,7 +213,7 @@
 			></path>
 		</g></svg
 	>
-	<svg class='size-8' viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+	<svg class='size-8 max-md:size-6' viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
 		><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
 			id="SVGRepo_tracerCarrier"
 			stroke-linecap="round"
@@ -278,7 +278,7 @@
 		</g></svg
 	>
 	<svg
-		class='size-8'
+		class='size-8 max-md:size-6'
 		viewBox="-0.5 0 48 48"
 		version="1.1"
 		xmlns="http://www.w3.org/2000/svg"

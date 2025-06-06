@@ -6,53 +6,48 @@
 </script>
 
 <div class="section-wrapper">
-	<!-- Responsive flex: column on mobile, row on md+ -->
-	<div class="relative flex flex-col md:flex-row w-full max-w-[1638px] max-h-full md:max-h-[1056px] gap-4">
-		
-		<!-- Left Image -->
-		<div class="flex justify-center md:block">
-			<img src={Hand} alt="hand" class="w-full md:w-[657px] h-auto md:h-[843px] rounded-2xl" />
+	<div
+		class="relative flex w-full max-w-[1638px] flex-col gap-4 2xl:h-[1056px] 2xl:grid 2xl:grid-cols-2"
+	>
+		<!-- Left Side -->
+		<div class="max-xl:flex max-xl:flex-col">
+			<div class="w-full justify-center 2xl:block">
+				<img src={Hand} alt="hand" class=" mx-auto rounded-2xl 2xl:h-[843px]" />
+			</div>
+
+			<div
+				class="flex flex-col max-2xl:items-center justify-center rounded-2xl bg-black 2xl:p-6 max-2xl:text-start 2xl:-translate-x-1/2 2xl:-translate-y-1/2 md:p-10 2xl:h-[340px] 2xl:absolute 2xl:top-1/2 2xl:left-1/2 2xl:w-[560px]"
+			>
+				<p class="2xl:mb-15 text-2xl max-2xl:text-center 2xl:text-5xl">
+					Celebration of Flavors from around the World Crafted
+				</p>
+				<button class=" bg-primary max-2xl:mt-4  p-3 max-2xl:rounded-2xl w-65 2xl:w-60">
+					VIEW OUR MENU <span class="font-bold">&#8594;</span>
+				</button>
+			</div>
 		</div>
 
-		<!-- Center Box -->
-		<div
-			class="relative md:absolute md:top-1/2 md:left-1/2 w-full md:w-[560px] h-auto md:h-[340px] translate-x-0 translate-y-0 md:-translate-x-1/2 md:-translate-y-1/2 flex flex-col justify-center bg-black p-6 md:p-10 text-start rounded-2xl"
-		>
-			<p class="mb-4 text-2xl md:text-5xl max-md:text-center">
-				Celebration of Flavors <br />
-				from around the World Crafted
-			</p>
-			<button class="bg-primary w-full md:w-60 p-3 max-md:rounded-2xl">
-				VIEW OUR MENU <span class="font-bold">&#8594;</span>
-			</button>
-		</div>
-
-		<!-- Text and Decorative Images -->
-		<div class="relative flex flex-col items-center md:items-start text-center md:text-left">
-			<h1 class="font-cormorant py-6 text-3xl md:text-[90px] leading-tight md:leading-none font-bold">
-				RESERVE YOUR <br class="max-md:hidden"/>
-				TABLE TODAY
+		<!-- Right Side -->
+		<div class="2xl:relative flex flex-col items-center 2xl:items-start md:text-left max-md:mt-10">
+			<h1 class="font-cormorant 2xl:py-6 leading-tight font-bold md:leading-none max-md:text-xl text-3xl 2xl:text-[90px]">
+				RESERVE YOUR TABLE TODAY
 			</h1>
 
-			<!-- Logo: static on mobile, absolute on md+ -->
+			<!-- Logo: only visible at 2xl+ -->
 			<img
 				src={logo}
 				alt="logo"
-				class="relative md:absolute md:top-1/2 md:left-60 z-10 w-[100px] md:w-[150px] h-auto max-md:hidden"
+				class="absolute top-1/2 z-10 hidden h-auto 2xl:w-[150px] 2xl:left-60 2xl:block"
 			/>
 
-			<!-- Vector: hide on mobile -->
-			<img
-				src={Vector}
-				alt="vector"
-				class="hidden md:block absolute top-[58%] right-1/6 z-0"
-			/>
+			<!-- Vector: only visible at 2xl+ -->
+			<img src={Vector} alt="vector" class="absolute top-[58%] z-0 hidden 2xl:right-70 2xl:block" />
 
-			<!-- Coffee Image: relative on mobile, absolute on md+ -->
+			<!-- Coffee Image -->
 			<img
 				src={Coffee}
 				alt="coffee"
-				class="relative md:absolute md:left-[280px] md:bottom-1 w-full md:w-[550px] h-auto md:h-[363px] rounded-2xl"
+				class="h-auto rounded-2xl 2xl:absolute md:bottom-1 2xl:h-[363px] 2xl:left-[250px] w-[650px] 2xl:w-[550px]"
 			/>
 		</div>
 	</div>

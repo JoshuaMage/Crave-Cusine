@@ -38,9 +38,9 @@
 
 <div class="section-wrapper">
 	<div
-		class="flex  md:h-[703px] md:w-[1600px] w-full flex-col items-center justify-center gap-10 bg-neutral-900 p-20"
+		class="flex 2xl:h-[703px] 2xl:w-[1600px] w-full flex-col items-center justify-center gap-10 bg-neutral-900 p-10 2xl:p-20"
 	>
-		<section class="grid md:grid-cols-2 items-center md:px-16 max-md:text-center max-md:gap-6">
+		<section class="grid md:grid-cols-2 items-center 2xl:px-16 max-md:text-center max-md:gap-6">
 			<div>
 				<h6 class="text-primary mb-2 text-sm font-black ">OUR POPULAR SERVICES</h6>
 				<h5 class="text-5xl font-bold">Best Category Foods Menu</h5>
@@ -52,11 +52,12 @@
 				</p>
 			</div>
 		</section>
-		<section class="flex max-md:flex-col gap-10">
+		<div class="flex justify-center">
+		<section class="2xl:flex max-2xl:grid max-2xl:grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 w-full gap-10 mx-auto justify-center items-center">
 			{#each category as { image, alt, title, detail, goto }}
 				<div
-					class={`h-[321px] w-[306px]  border-2 p-5 ${
-						title === 'Popular Food' ? 'border-red-700 bg-red-700 max-md:rounded-2xl' : 'border-red-700 bg-black max-md:rounded-2xl'
+					class={`h-[321px] w-[306px]  border-2 p-5  ${
+						title === 'Popular Food' ? 'border-red-700 bg-red-700 max-md:rounded-2xl' : 'border-red-700 bg-black max-xl:rounded-2xl'
 					}`}
 				>
 					<img src={image} {alt} class="size-14" />
@@ -68,5 +69,6 @@
 				</div>
 			{/each}
 		</section>
+		</div>
 	</div>
 </div>

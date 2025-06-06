@@ -6,7 +6,7 @@
 			content: [
 				'Our meni is celebration of flavors from aournd the world, crafted with care and creativity by our talented'
 			],
-			custom: true // we will render <Svg /> only here
+			custom: true 
 		},
 		{
 			title: 'Quik Links',
@@ -24,37 +24,37 @@
 </script>
 
 <div class="section-wrapper">
-    <div class="flex  w-full md:w-[1600px] flex-col justify-center">
+    <div class="flex  w-full 2xl:w-[1600px] flex-col justify-center">
         <hr />
-        <div class="max-md:flex-col my-20 flex items-center md:justify-between max-md:gap-4">
+        <div class="flex max-lg:flex-col max-2xl:justify-around 2xl:justify-between items-center gap-8 py-10">
             <h6 class="text-4xl font-bold tracking-wider">Subscribe for Daily Update</h6>
-            <div class="flex h-12 md:w-[524px]">
+            <div class="flex h-12 ">
                 <input type="email" placeholder="Enter Email Address" class="border px-10 py-4" />
-                <button class="text-prim1ary bg-primary p-4"> Subscribe Now</button>
+                <button class="text-prim1ary bg-primary p-4 "> Subscribe Now</button>
             </div>
         </div>
 
-        <div class="md:mx-auto grid md:h-[319px] md:w-[1297px] w-full md:grid-cols-4 items-center justify-center">
+        <div class="grid 2xl:grid-cols-4 min-md:grid-cols-2 gap-4  w-full 2xl:h-[319px] 2xl:w-[1297px] justify-center max-2xl:text-center  mx-auto 2xl:mt-20">
             {#each Footer as section}
-                <div class="flex flex-col max-md:p-10 {section.custom ? 'gap-4' : 'md:items-center'}">
+                <div class="flex flex-col max-md:p-2 {section.custom ? 'gap-4' : 'items-center'}">
                     <div>
                         <h6 class="{section.custom ? 'text-5xl' : 'text-3xl'} font-bold">{section.title}</h6>
                     </div>
-                    <div class="md:h-64 md:w-36">
+                    <div class="2xl:h-64  2xl:w-36">
                         {#if section.content}
                             {#each section.content as paragraph}
-                                <p class="w-80 text-gray-500">{paragraph}</p>
+                                <p class="2xl:w-80 max-md:px-0 max-2xl:px-20 text-gray-500">{paragraph}</p>
                             {/each}
                         {/if}
 
                         {#if section.list}
-                            <ul class="mt-4 grid grid-cols-2 md:flex md:flex-col gap-2 text-gray-400">
+                            <ul class="mt-4  flex flex-col gap-2 text-gray-400">
                                 {#each section.list as item}
                                     <li class="text-xl">{item}</li>
                                 {/each}
                             </ul>
                         {/if}
-                        <div class="mt-5">
+                        <div class="mt-5  flex justify-center items-center">
                             {#if section.custom}
                                 <SVG />
                             {/if}

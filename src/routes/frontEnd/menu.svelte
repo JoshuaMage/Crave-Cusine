@@ -39,14 +39,14 @@
 </script>
 
 <div class="section-wrapper">
-	<div class="flex md:h-[700px] md:w-[1296px] w-full flex-col items-center justify-center ">
+	<div class="flex lg:h-[700px] md:w-[1296px] w-full flex-col items-center justify-center ">
 		<div class="mb-10 text-center">
 			<h6 class="text-primary text-bold mb-4 text-lg">TASTY MENU</h6>
 			<p class="text-4xl font-bold tracking-widest">EXPLORE THE YUMMY <br /> MENU</p>
 		</div>
-		<div class="flex max-md:items-center max-md:flex-col gap-10">
-			<img src={Menu} alt="menu" class="md:w-72 max-md:w-96 max-md:rounded-2xl" />
-			<div class="flex md:w-[636px] w-full max-md:gap-4 flex-col justify-between">
+		<div class="flex max-lg:items-center max-lg:flex-col gap-10">
+			<img src={Menu} alt="menu" class="max-2xl:w-72 max-lg:w-96 max-md:rounded-2xl" />
+			<div class="flex xl:w-[636px] w-full max-md:gap-4 flex-col justify-between">
 				{#each menu as { image, alt, title, price, detail }}
 					<div class="flex w-full gap-4">
 						<img src={image} alt={alt} class="h-17 w-19" />
@@ -61,7 +61,7 @@
 					</div>
 				{/each}
 			</div>
-			<img src={Menu1} alt="menu1" class="md:w-72 max-md:w-96 max-md:rounded-2xl" />
+			<img src={Menu1} alt="menu1" class="max-2xl:w-72 max-lg:w-96 max-md:rounded-2xl" />
 		</div>
 		<button class="bg-primary mt-5 p-3 text-lg">
 			ABOUT MORE <span class="font-bold">&#8594;</span>

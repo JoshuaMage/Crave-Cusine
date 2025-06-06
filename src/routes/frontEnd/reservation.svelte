@@ -20,7 +20,7 @@
 			</div>
 			<div class="mt-4 flex flex-wrap justify-center gap-4">
 				{#each ['Date', 'Time', 'Person'] as placeholder}
-					<div class="relative h-16 w-[416px]">
+					<div class="relative max-md:px-10 w-full md:h-16 md:w-[416px]">
 						<input
 							type={placeholder === 'Date' ? 'date' : placeholder === 'Time' ? 'time' : 'text'}
 							placeholder={placeholder}
@@ -37,7 +37,7 @@
 				{/each}
 			</div>
 
-			<button class="bg-primary mt-4 px-6 py-3 max-md:rounded-2xl">
+			<button class="bg-primary mt-4 px-6 py-3 max-md:rounded-2x">
 				ABOUT MORE <span class="font-bold">&#8594;</span>
 			</button>
 		</div>
